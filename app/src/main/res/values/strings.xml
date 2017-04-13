@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ScarneDice</string>
+    <string name="you_score">Your Score:</string>
+    <string name="computer_score">Computer Score: </string>
+</resources>
