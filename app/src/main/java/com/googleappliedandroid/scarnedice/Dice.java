@@ -16,9 +16,9 @@ public class Dice {
     }
     public int rollDice(){
         int rolledDice = rand.nextInt()%6+1;
-        if(rolledDice == 0){
+        if(rolledDice == 1){
             resetScore();
-            return 0;
+            return 1;
         }
         score = score + rolledDice;
         return rolledDice;

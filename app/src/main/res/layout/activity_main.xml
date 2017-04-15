@@ -11,47 +11,77 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
+            android:id="@+id/your_score_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/you_score"
-            android:id="@+id/your_score_text"/>
+            android:text="@string/you_score" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10px"
-            android:layout_marginRight="10px"
-            android:text="0"
-            android:id="@+id/your_score"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10px"
-            android:text="@string/computer_score"
-            android:id="@+id/computer_score_text"/>
-        <TextView
+            android:id="@+id/your_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10px"
             android:layout_marginRight="10px"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/computer_score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="@string/computer_score" />
+
+        <TextView
+            android:id="@+id/computer_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:layout_marginRight="10px"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="40px">
+
+        <TextView
+            android:id="@+id/user_turn_score"
+            android:layout_width="116dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="100px"
             android:text="0"
-            android:id="@+id/computer_score" />
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dicePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dice1" />
+
+        <TextView
+            android:id="@+id/computer_turn_score"
+            android:layout_width="116dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="100px"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textStyle="bold" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/dicePicture"
-            android:background="@drawable/dice1" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40px"
+        android:layout_marginBottom="40px">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
